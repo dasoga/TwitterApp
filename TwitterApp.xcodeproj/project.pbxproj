@@ -82,7 +82,6 @@
 				2C9E30FA1E21D449002FB97A /* Assets.xcassets */,
 				2C9E30FC1E21D449002FB97A /* LaunchScreen.storyboard */,
 				2C9E30FF1E21D449002FB97A /* Info.plist */,
-				2C9E31071E21EAE2002FB97A /* HomeDataSourceController.swift */,
 			);
 			path = TwitterApp;
 			sourceTree = "<group>";
@@ -98,6 +97,7 @@
 		2C9E310A1E21EF63002FB97A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2C9E31071E21EAE2002FB97A /* HomeDataSourceController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
