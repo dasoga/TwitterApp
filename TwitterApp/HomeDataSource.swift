@@ -11,8 +11,8 @@ import LBTAComponents
 class HomeDataSource: Datasource {
     
     let users: [User] = {
-        let user1 = User(name: "iOS Mexico School", username: "@iosmexschool", bioText: "Mexican School iOS programming", profileImage: #imageLiteral(resourceName: "profileImage"))
-        let user2 = User(name: "User Two", username: "@usertwo", bioText: "This is the bio for user two in text view.", profileImage: #imageLiteral(resourceName: "profileImage"))
+        let user1 = User(name: "iOS Mexico School", username: "@iosmexschool", bioText: "Mexican School iOS programming, learn Swift an play with new frameworks", profileImage: #imageLiteral(resourceName: "profileImage"))
+        let user2 = User(name: "User Two", username: "@usertwo", bioText: "This is the bio for user two in text view.This is the bio for user two in text view.This is the bio for user two in text view.This is the bio for user two in text view.", profileImage: #imageLiteral(resourceName: "profileImage"))
         
         return [user1, user2]
     }()
