@@ -17,7 +17,14 @@ class HomeDataSource: Datasource {
         return [user1, user2]
     }()
     
-    let tweets = ["Tweet one", "Tweet two"]
+    let tweets: [Tweet] = {
+        let user1 = User(name: "iOS Mexico School", username: "@iosmexschool", bioText: "Mexican School iOS programming, learn Swift an play with new frameworks", profileImage: #imageLiteral(resourceName: "profileImage"))
+        
+        let tweet = Tweet(user: user1, message: "Welcome to episode 9 and more lalala more text lalalalalala Welcome to episode 9 and more lalala more text lalalalalala Welcome to episode 9 and more lalala more text lalalalalala Welcome to episode 9 and more lalala more text lalalalalala")
+        let tweet2 = Tweet(user: user1, message: "Welcome to episode 9 and more lalala more text lalalalalala Welcome to episode 9 and more lalala more text lalalalalala Welcome to episode 9 and more lalala more text lalalalalala Welcome to episode 9 and more lalala more text lalalalalala")
+        
+        return [tweet, tweet2]
+    }()
     
     override func footerClasses() -> [DatasourceCell.Type]? {
         return [UserFooter.self]
@@ -35,6 +42,9 @@ class HomeDataSource: Datasource {
     }
     
     override func item(_ indexPath: IndexPath) -> Any? {
+        if indexPath.section == 1{
+            return tweets[indexPath.item]
+        }
         return users[indexPath.item]
     }
     
