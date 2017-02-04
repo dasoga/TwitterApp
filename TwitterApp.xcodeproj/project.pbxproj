@@ -84,9 +84,9 @@
 		2C9E30F21E21D449002FB97A /* TwitterApp */ = {
 			isa = PBXGroup;
 			children = (
+				2C9E31091E21EF5B002FB97A /* Views */,
 				2C9E310B1E21EF6A002FB97A /* Models */,
 				2C9E310A1E21EF63002FB97A /* Controllers */,
-				2C9E31091E21EF5B002FB97A /* Views */,
 				2C9E30F31E21D449002FB97A /* AppDelegate.swift */,
 				2C9E31051E21D49E002FB97A /* HomeViewController.swift */,
 				2C9E30FA1E21D449002FB97A /* Assets.xcassets */,
